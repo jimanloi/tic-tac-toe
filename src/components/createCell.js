@@ -1,7 +1,8 @@
 import dom from '../dom.js';
 
-const createCell = (domEl) => {
-    const board = document.getElementById('board');
+const createCell = () => {
+    const board = document.createElement('div');
+    board.classList.add('cellContainer');
     for (let i = 0; i < 9; i++) {
         const cell = document.createElement('div');
         cell.className = 'cell';
