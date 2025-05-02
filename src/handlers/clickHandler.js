@@ -3,7 +3,6 @@ import isWinner from '../utils/isWinner.js';
 import dom from '../dom.js';
 
 const clickHandler = (e) => {
-    debugger;
     //if user is clicking on one of the cells
     if (e.target.className !== 'cell') {
         return;
